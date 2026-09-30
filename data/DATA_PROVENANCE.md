@@ -20,11 +20,10 @@ Conference (TIC) 2026, Best Paper (Paper ID 734), sole-authored by
 Anusha Mukka. Published on IEEE Xplore September 29, 2026, DOI
 10.1109/TIC68483.2026.11703008.
 
-> Note (Sept 29, 2026): this reconstruction was built from the
-> pre-publication manuscript's specification (Section IV, Table II,
-> Table III). The published version was revised for publication. If
-> Section IV or Table II changed in the camera-ready, the reconstruction
-> target should be re-checked against the published tables.
+> Note (Sept 30, 2026): the specification above was verified against
+> the published paper (IEEE Xplore PDF, DOI
+> 10.1109/TIC68483.2026.11703008): Section IV, Table II, and Table III
+> all match. No camera-ready revision to the benchmark spec was found.
 
 Spec sources used for reconstruction:
 - Section IV, "THE AUTH-VULN-PATCH BENCHMARK" (three construction sources,
@@ -72,7 +71,7 @@ incidents:
 - Table II prints an overall mean of 7.7 hops, but its own per-split means
   (7.4/7.1/7.8/9.2) imply 7.49. This release preserves the per-split means exactly
   (overall mean 7.486); the 7.7 figure appears to be a
-  rounding artifact in the manuscript. Per-split statistics are the
+  rounding artifact in the paper. Per-split statistics are the
   primary specification and are exact.
 - CVE/CWE identifiers, host/user names, timestamps, and graph contents are
   synthetic stand-ins, not the original records.
