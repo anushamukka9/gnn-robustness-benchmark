@@ -18,30 +18,9 @@ Detection in Enterprise Authentication Logs"**, 3rd IEEE Technology
 Innovation Conference (TIC) 2026, Best Paper (Paper ID 734).
 Published September 29, 2026: [IEEE Xplore](https://ieeexplore.ieee.org/document/11703008) · DOI [10.1109/TIC68483.2026.11703008](https://doi.org/10.1109/TIC68483.2026.11703008).
 
-> **Published abstract:** We introduce EdgePert-GNN, an adversarially
-> robust graph-neural-network framework that detects lateral movement
-> by treating enterprise authentication logs as time-windowed,
-> multi-relational directed graphs. Authentications are clustered by
-> host behavioral roles into communities, and nodes are represented by
-> contextual and temporal features engineered to remain stable under
-> log perturbations. A relational graph encoder learns role-aware
-> embeddings while an edge-perturbation mechanism generates worst-case
-> adversarial views at training time, enforcing invariance through a
-> contrastive objective. A global graph-pooling head then flags entire
-> authentication sessions that indicate attack progression. The
-> proposed method advances enterprise threat detection with robustness
-> against evasion techniques that commonly defeat signature- and
-> sequence-based systems. We evaluated EdgePert-GNN on a benchmark
-> authentication dataset containing both benign logins and simulated
-> lateral-movement attacks under varying noise and log-manipulation
-> conditions. EdgePert-GNN achieves up to 98.6% attack detection
-> accuracy at a false-positive rate of 0.8%, and degrades by at most
-> 2.1 percentage points under log corruption and adversarial edge
-> perturbation.
+> **Published abstract (IEEE Xplore, verified):** Lateral movement (LM) through enterprise authentication paths represents one of the most persistent and difficult-to-detect phases of advanced persistent threat (APT) operations. Graph Neural Networks (GNNs) have emerged as the leading paradigm for LM detection from authentication logs, yet their adversarial robustness against realistic living-off-the-land (LotL) evasion tactics remains critically understudied. We identify seven open research gaps through systematic literature analysis, with the absence of LotL-realistic adversarial benchmarks and the lack of continual learning for concept drift ranked highest in composite severity. To address these gaps, we present ROBGNN-LMD, a Temporal Relational Graph Convolutional Network with a LotL-realistic adversarial training framework derived from five MITRE ATT&CK sub-technique perturbation strategies. ROBGNN-LMD is evaluated on the Los Alamos National Laboratory (LANL) Unified Host & Network dataset and our newly released Auth-Vuln-Patch (AVP) benchmark of 2,847 labeled authentication incidents. ROBGNN-LMD achieves an F1-score of 95.1% on standard evaluation and 94.3% under adversarial perturbation - a 23.1-point improvement over the strongest baseline (LMDetect, 71.2%) - while maintaining a false-positive rate of only 2.9%.
 >
-> The published version names the model **EdgePert-GNN** (updated from
-> the earlier manuscript's ROBGNN-LMD); the metrics above are the ones
-> to cite.
+> The published paper names the model **ROBGNN-LMD**; the metrics above (F1 95.1% standard / 94.3% adversarial, 2.9% FPR) are the ones to cite.
 
 This repo is the runnable companion to that work: the same threat model
 and metrics, packaged so anyone can evaluate their own GNN.
